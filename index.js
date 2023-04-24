@@ -1,10 +1,10 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 
-
-
+var cors = require('cors');
 const stripe = require('stripe')("sk_test_51MywnDKL9hIJ3aoFj7ufDEeOXDySBcUCVviuJrMiZ4YlpFH2rEuaum37o3LJtzMmObURLMXa7czeinuY7hGYboLe00i8MtuDVa")
 const app = express();
+app.use(cors());
 
 
 app.use(
