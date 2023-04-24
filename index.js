@@ -39,7 +39,7 @@ app.post('/api/checkout',async(req, res) =>  {
     mode: "payment",
     customer_creation: "always",
     success_url: `https://bifrost-superboo0311.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `https://bifrost-superboo0311.vercel.app/`,
+    cancel_url: `https://bifrost-superboo0311.vercel.app`,
     });
     res.redirect(session.url);
 
